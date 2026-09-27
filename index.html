@@ -121,11 +121,46 @@
                     <p>Pilih materi yang ingin dipelajari dan lanjutkan proses belajarmu.</p>
                 </div>
 
-                <div class="filter-wrap">
-                    <button class="filter-btn active" data-filter="semua">Semua</button>
-                    <button class="filter-btn" data-filter="matematika">Matematika</button>
-                    <button class="filter-btn" data-filter="dkv">DKV</button>
-                </div>
+               
+<div class="material-tools">
+
+    <!-- SEARCH -->
+    <div class="search-box">
+        <span class="search-icon">🔍</span>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari materi, contoh: Matriks, SPLTV, Photoshop..."
+            autocomplete="off"
+        >
+
+        <button
+            id="clearSearch"
+            class="clear-search"
+            type="button"
+            aria-label="Hapus pencarian"
+        >×</button>
+    </div>
+
+    <!-- FILTER -->
+    <div class="filter-wrap">
+        <button class="filter-btn active" data-filter="semua">
+            Semua
+        </button>
+
+        <button class="filter-btn" data-filter="matematika">
+            Matematika
+        </button>
+
+        <button class="filter-btn" data-filter="dkv">
+            DKV
+        </button>
+    </div>
+
+</div>
+
+<p id="searchResult" class="search-result"></p>
 
                 <div class="course-grid" id="courseGrid">
                     <article class="course-card" data-category="matematika">
